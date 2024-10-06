@@ -1,0 +1,206 @@
+/* Fondo general */
+body {
+    background-color: #1a3d1a; /* Verde oscuro */
+    color: #f0f0f0; /* Blanco suave para texto */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.btn-agregar-carrito {
+    font-family: "Borel", cursive;
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: move;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-agregar-carrito:hover {
+    background-color: #45a049;
+}
+
+/* Encabezado */
+header {
+    background-color: #254d25; /* Verde más oscuro */
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+header .logo h1 {
+    font-family: "Grechen Fuemen", cursive;
+    color: #f0f0f0; /* Blanco suave */
+    font-size: 1.8em;
+    margin: 0;
+    
+}
+
+/* Navegación */
+nav ul {
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    font-family: "Edu AU VIC WA NT Dots", cursive;
+    color: #f0f0f0; /* Blanco suave */
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    
+    color: #ffff99; /* Amarillo claro al pasar el cursor */
+}
+
+/* Sección Principal */
+h2 {    
+    font-family: "Roboto Slab", serif;
+    color: #ffff99; /* Amarillo claro para encabezados */
+    font-size: 1.6em;
+}
+
+p, h3, label, blockquote {
+    font-family: "Cairo", sans-serif;
+    
+    color: #ffffff; /* Texto en blanco suave */
+}
+
+blockquote {
+    
+    font-style: italic;
+    background-color: #2e522e; /* Verde oscuro para fondo de testimonios */
+    padding: 10px;
+    border-left: 5px solid #ffff99; /* Resaltar borde izquierdo */
+}
+
+/* Productos */
+.productos {
+    display: flex;
+    gap: 20px;
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.producto h3 {
+    
+    color: #ffff99; /* Amarillo claro */
+}
+
+.producto p {
+    color: #f0f0f0;
+}
+
+/* Estilos para testimonios */
+.testimonio {
+    margin-bottom: 40px; /* Espacio entre los testimonios */
+    padding: 20px;
+    background-color: #2e522e; /* Fondo verde oscuro */
+    border-radius: 10px;
+}
+
+.testimonio blockquote {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #f0f0f0;
+    margin-bottom: 15px;
+}
+
+.video-testimonial {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.video-testimonial iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border-radius: 8px; /* Esquinas redondeadas en el video */
+}
+
+/* Formulario de contacto */
+form {
+    background-color: #2e522e; /* Fondo verde oscuro */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ffff99; /* Borde amarillo claro */
+    border-radius: 5px;
+    background-color: #f0f0f0; /* Fondo claro para inputs */
+}
+
+button {
+    background-color: #ffff99; /* Amarillo claro */
+    color: #254d25; /* Texto verde oscuro */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e6e600; /* Efecto al pasar el cursor */
+}
+
+/* Pie de página */
+footer {
+    background-color: #254d25; /* Verde oscuro */
+    color: #f0f0f0;
+    text-align: center;
+    padding: 10px;
+}
+
+.social-links a {
+    color: #ffff99;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #e6e600;
+}
+
+  /* Para pantallas pequeñas (móvil) */
+  @media only screen and (max-width: 600px) {
+    nav ul {
+      display: block;
+    }
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap; /* Hace que los elementos se ajusten a la siguiente línea si el espacio es insuficiente */
+  }
+  
+  .item {
+    flex: 1 1 200px; /* Los elementos ocupan el 100% del espacio disponible y un mínimo de 200px */
+    }
+    .contact-form-container {
+        border: 2px solid #2E8B57; /* Borde verde oscuro */
+        padding: 20px; /* Espacio interno alrededor del contenido */
+        border-radius: 10px; /* Bordes redondeados */
+        background-color: #F0FFF0; /* Color de fondo verde muy claro */
+        max-width: 600px; /* Ancho máximo del recuadro */
+        margin: 0 auto; /* Centrar el recuadro */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle efecto de elevación */
+    }
+    
